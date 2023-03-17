@@ -46,7 +46,7 @@ done & # Run the loop in the background
 # Loop through the URLs file and search for the specified keywords
 while read url; do
   if echo "$url" | grep -E '?s=|?search=|?id=|?lang=|?keyword=|?query=|?page=|?keywords=|?year=|?view=|?email=|?type=|?name=|?p=|?month=|?immagine=|?list_type=|?url=|?terms=|?categoryid=|?key=|?l=|?begindate=|?enddate=|?categoryid2=|?t=|?cat=|?category=|?action=|?bukva=|?redirect_uri=|?firstname=|?c=|?lastname=|?uid=|?startTime=|?eventSearch=|?categoryids2=|?categoryids=|?sort=|?positiontitle=|?groupid=|?m=|?message=|?tag=|?pn=|?title=|?orgId=|?text=|?handler=|?myord=|?myshownums=|?id_site=|?city=|?search_query=|?msg=|?sortby=|?produkti_po_cena=|?produkti_po_ime=|?mode=|?CODE=|?location=|?v=|?order=|?n=|?term=|?start=|?k=|?redirect=|?ref=|?file=|?mebel_id=|?country=|?from=|?r=|?f=|?field5B5D=|?searchScope=|?state=|?phone=|?Itemid=|?lng=|?place=|?bedrooms=|?expand=|?e=|?price=|?d=|?path=|?address=|?day=|?display=|?a=|?error=|?form=|?language=|?mls=|?kw=|?u=|?utm_source=|utm_medium=|utm_campaign=' > /dev/null; then
-    echo $url >> $found_urls_file
+    echo $url >> $found_urls_file | sort -u > $found_urls_file
   fi
 done < $url_file
 
