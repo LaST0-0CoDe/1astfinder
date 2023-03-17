@@ -1,3 +1,3 @@
-# dorkfinder -h 
+1astfinder finder tool hich contain unique keyword for xss 
 
-u - urls list
+./1astfinder.sh -u your_urls_list
