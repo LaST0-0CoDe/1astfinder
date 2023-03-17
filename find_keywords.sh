@@ -27,6 +27,8 @@ cat << "EOF"
 ⠀⠀⠀⠙⢦⣤⡠⡙⠲⠧⠀⣠⣇⣨⣏⣽⡹⠽⠏⠀⡇⠀
 ⠀⠀⠀⠀⠀⠈⠙⠦⢕⡋⠶⠄⣤⠤⠤⠤⠤⠂⡠⠀⡇
 
+                     @Created by 1ASTCOD3
+                     @Unique parameters collecting for xss and sqli
 EOF
 
 # Create a new file to store the found URLs
